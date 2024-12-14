@@ -1,0 +1,96 @@
+<app-header></app-header>
+
+<div class="home-container">
+
+  <div class="all-movie">
+
+    <div class="Trending-movie">
+      <div class="top">
+        <h4>Trending movies</h4>
+        <div class="view-all">View-All </div>
+      </div>
+      <div class="thumbnail">
+        <div *ngFor="let movie of trendingMovie" class="card card1" style="width: 18rem;">
+          <div class="cover" (click)="goToMovie('trendingMovie',movie.id)"> 
+            <img [src]="movie.cover" class="card-img-top" alt="img"></div>
+          
+
+
+          <div class="card-body">
+            <h5 class="card-title">{{movie.name}}</h5>
+            <p class="card-text"></p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Rating {{movie.rating}}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="Threater-movie">
+      <div class="top">
+        <h4>Threater-movies</h4>
+        <div class="view-all">View-All </div>
+      </div>
+      <div class="thumbnail">
+        <div *ngFor="let movie of threaterMovie" class="card card1" style="width: 18rem;">
+
+          <div class="cover" (click)="goToMovie('threaterMovie',movie.id)"> <img [src]="movie.cover" class="card-img-top" alt="img"></div>
+
+
+          <div class="card-body">
+            <h5 class="card-title">{{movie.name}}</h5>
+            <p class="card-text"></p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Rating {{movie.rating}}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="Popular-movie">
+      <div class="top">
+        <h4>Popular-movies</h4>
+        <div class="view-all">View-All </div>
+      </div>
+      <div class="thumbnail">
+        <div *ngFor="let movie of popularMovie" class="card card1" style="width: 18rem;">
+
+          <div class="cover" (click)="goToMovie('popularMovie',movie.id)"> <img [src]="movie.cover" class="card-img-top" alt="img"></div>
+
+
+          <div class="card-body">
+            <h5 class="card-title">{{movie.name}}</h5>
+            <p class="card-text"></p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Rating {{movie.rating}}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="popular-movie">
+    <h4>Top Hits All Times </h4>
+    <div class="movie">
+
+      <div class="Trending-movie">
+
+        <div class="thumbnail">
+          <div *ngFor="let movie of popularMovie" (click)="goToMovie('popularMovie',movie.id)"  class=" card2" style="width: 18rem;">
+            <h5 class="">{{movie.name}}</h5>
+            <span class="span">{{movie.rating}}</span>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>

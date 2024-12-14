@@ -1,0 +1,66 @@
+.logo-container {
+  height: 100vh;
+
+}
+
+.image-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.my-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  height: 100vh;
+
+}
+
+.text-overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  max-width: 90%;
+}
+
+.text-overlay h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.text-overlay p {
+  margin: 5px 0 0;
+  font-size: 0.9rem;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.form {
+  margin: 20px;
+  height: 280px;
+  width: 300px;
+  border-radius: 1px solid pink;
+  border: 1 px solid blue;
+
+}
+
+.error {
+  color: white;
+  padding: 15px;
+  font-size: 14px;
+  margin-top: 0px;
+}

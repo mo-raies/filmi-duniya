@@ -1,0 +1,28 @@
+<div class="logo-container">
+  <div class="image-wrapper">
+    <img src="assets/filmi-duniy.jpg" alt="img not found" class="my-image">
+    <div class="text-overlay">
+      <h3>फ़िल्मी दुनिया</h3>
+      <p>फिल्म उद्योग ने अपनी विनम्र शुरुआत से लेकर अब तक एक लंबा सफर तय किया है और यह मनोरंजन जगत के सबसे प्रभावशाली और लाभदायक क्षेत्रों में से एक बना हुआ है। इसमें संस्कृति को आकार देने, सामाजिक मूल्यों को प्रभावित करने और दुनिया भर के लोगों को जोड़ने की शक्ति है। जैसे-जैसे तकनीक उन्नति कर रही है और फिल्म वितरण के लिए नए प्लेटफ़ॉर्म उभर रहे हैं, फिल्म उद्योग का भविष्य और भी रोमांचक संभावनाओं को समेटे हुए है।
+        चाहे वह वर्चुअल रियलिटी के उदय के माध्यम से हो, इंटरैक्टिव फिल्मों के जरिए या नई कहानी कहने की तकनीकों से, फिल्म उद्योग आने वाली पीढ़ियों को मंत्रमुग्ध और प्रेरित करता रहेगा।.</p>
+
+      <form class="form">
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Username</label>
+          <input type="text" name="unname" class="form-control" [(ngModel)]="username" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" name="pword" class="form-control" [(ngModel)]="password" id="exampleInputPassword1">
+        </div>
+        <div class="error">{{errorMsg}}</div>
+        <button (click)="login()" type="submit" class="btn btn-primary">Login</button>
+      </form>
+
+    </div>
+  </div>
+
+
+
+
+</div>

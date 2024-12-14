@@ -1,0 +1,82 @@
+.home-container {
+  display: flex;
+
+}
+
+.home-container .all-movie {
+  width: 85%;
+  border-right: 1px solid rgb(243, 239, 43);
+
+  min-height: 80%;
+  font-family: 'Roboto', sans-serif;
+  padding: 20px 40px;
+
+}
+
+.home-container .popular-movie {
+  width: 15%;
+  min-height: 80%;
+  font-family: 'Roboto', sans-serif;
+  padding: 20px 5px;
+}
+
+
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.top h4 {
+
+  font-weight: bold;
+  padding-left: 5px;
+  text-transform: uppercase;
+  border-left: 5px solid yellow;
+}
+
+.view-all {
+  color: rgb(141, 145, 78);
+  cursor: pointer;
+}
+
+
+.card1 {
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.thumbnail {
+  display: flex;
+  justify-content: space-around;
+  gap: 2px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.popular-movie h4 {
+  font-weight: bold;
+  padding-left: 5px;
+  text-transform: uppercase;
+  border-left: 5px solid yellow;
+}
+
+.span {
+  color: brown;
+
+
+}
+
+.card2 {
+
+  padding-left: 2px;
+  cursor: pointer;
+
+
+  h5 {
+    color: blue;
+  }
+}
